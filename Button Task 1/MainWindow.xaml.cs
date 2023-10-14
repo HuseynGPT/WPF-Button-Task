@@ -48,6 +48,7 @@ namespace Button_Task_1
         private void Btn1_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             Btn1.Visibility = Visibility.Hidden;
+            this.Title = Btn1.Content + "deleted";
 
         }
 
@@ -70,7 +71,7 @@ namespace Button_Task_1
         private void Btn2_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             Btn2.Visibility = Visibility.Hidden;
-
+            this.Title = Btn2.Content + "deleted";
         }
 
         private void Btn3_Click(object sender, RoutedEventArgs e)
@@ -90,7 +91,7 @@ namespace Button_Task_1
         private void Btn3_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             Btn3.Visibility = Visibility.Hidden;
-
+            this.Title = Btn3.Content + "deleted";
         }
 
         private void Btn4_Click(object sender, RoutedEventArgs e)
@@ -110,7 +111,7 @@ namespace Button_Task_1
         private void Btn4_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             Btn4.Visibility = Visibility.Hidden;
-
+            this.Title = Btn4.Content + "deleted";
         }
 
         private void Btn5_Click(object sender, RoutedEventArgs e)
@@ -130,7 +131,7 @@ namespace Button_Task_1
         private void Btn5_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             Btn5.Visibility = Visibility.Hidden;
-
+            this.Title = Btn5.Content + "deleted";
         }
 
         private void Btn6_Click(object sender, RoutedEventArgs e)
@@ -150,12 +151,27 @@ namespace Button_Task_1
         private void Btn6_MouseRightButtonDown(object sender, MouseButtonEventArgs e)
         {
             Btn6.Visibility = Visibility.Hidden;
-
+            this.Title = Btn6.Content + " deleted";
         }
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Her hansi bir buttonu silmek isteyirsinizse uzerine gelib mousenin sag duymesi ile asagi cekin");
+            MessageBox.Show("Her hansi bir buttonu silmek isteyirsinizse uzerine gelib mousenin sag duymesi ile asagi cekin\nRestore All Changes basdiqda etdiyimiz deyisiklikler geri alinir");
+        }
+
+        private void Restore_Click(object sender, RoutedEventArgs e)
+        {
+            this.Background = new SolidColorBrush()
+            {
+                Color = Color.FromRgb(255, 255, 255)
+            };
+            this.Title = "Button Task";
+            Btn1.Visibility = Visibility.Visible;
+            Btn2.Visibility = Visibility.Visible;
+            Btn3.Visibility = Visibility.Visible;
+            Btn4.Visibility = Visibility.Visible;
+            Btn5.Visibility = Visibility.Visible;
+            Btn6.Visibility = Visibility.Visible;
         }
     }
 }

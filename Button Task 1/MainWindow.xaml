@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Button_Task_1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Button Task" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
         <Button x:Name="Btn1" Content="Button 1" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Height="50" Click="Btn1_Click" MouseRightButtonDown="Btn1_MouseRightButtonDown" />
         <Button x:Name="Btn2" Content="Button 2" HorizontalAlignment="Center" VerticalAlignment="Top" Width="100" Height="50" Click="Btn2_Click" MouseRightButtonDown="Btn2_MouseRightButtonDown"/>
@@ -13,6 +13,7 @@
         <Button x:Name="Btn4" Content="Button 4" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="100" Height="50" Click="Btn4_Click" MouseRightButtonDown="Btn4_MouseRightButtonDown"/>
         <Button x:Name="Btn5" Content="Button 5" HorizontalAlignment="Center" VerticalAlignment="Bottom" Width="100" Height="50" Click="Btn5_Click" MouseRightButtonDown="Btn5_MouseRightButtonDown"/>
         <Button x:Name="Btn6" Content="Button 6" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="100" Height="50" Click="Btn6_Click" MouseRightButtonDown="Btn6_MouseRightButtonDown"/>
-        <Button x:Name="About" Content="About" HorizontalAlignment="Center" VerticalAlignment="Center" Width="100" Height="50" Click="About_Click" />
+        <Button x:Name="About" Content="About" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Height="50" Click="About_Click" Margin="276,0,0,0" />
+        <Button x:Name="Restore" Content="Restore All Changes" HorizontalAlignment="Left" VerticalAlignment="Center" Width="100" Height="50" Click="Restore_Click" Margin="400,0,0,0" />
     </Grid>
 </Window>
